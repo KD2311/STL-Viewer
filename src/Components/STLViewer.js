@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import { extend } from '@react-three/fiber';
 import { Canvas } from "@react-three/fiber";
 import { STLLoader } from "three/examples/jsm/loaders/STLLoader";
 import Controls from "./Controls";
@@ -31,8 +30,8 @@ function STLViewer() {
 
     const handleUnload = () => {
         setGeometry(null);
-        fileRef.current.value = null;
         setTranslation({ x: 0, y: 0, z: 0 });
+        fileRef.current.value = null;
     };
 
     const handleTranslate = () => {
@@ -118,5 +117,3 @@ function STLViewer() {
 }
 
 export default STLViewer;
-
-
