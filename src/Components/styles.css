@@ -14,7 +14,7 @@ body {
 }
 
 .screen {
-  margin: 20px 20px 10px 20px;
+  margin: 20px 20px 5px 20px;
   border: 1px solid #e09d98;
   background: linear-gradient(to bottom right, #f1c5c5, #7d5feb);
 }
